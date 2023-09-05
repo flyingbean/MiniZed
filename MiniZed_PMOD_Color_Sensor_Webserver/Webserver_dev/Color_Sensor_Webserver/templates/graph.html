@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>MiniZed Sensor Webserver Demo</title>
+    <link rel="stylesheet" href='../static/style.css'/>
+</head>
+<br>
+ <h10>Element14 Pathway Programming III Design Challenge</h10>
+<br> 
+<br> 
+ <h11>MiniZed PMOD Color Sensor Webserver</h11>
+<body>
+  <script type="text/javascript">
+    function changeBackground(color) {
+       document.body.style.background = color;
+    }
+    window.addEventListener("load",function() { changeBackground('rgb({{color_r}}, {{color_g}}, {{color_b}})') });  
+  </script>
+ <br> 
+    <div style="height: 50vh; width: 30%;">
+        <canvas id="ColorChart"></canvas>
+    </div>
+ 
+    <script>
+        const labels = {{ labels | tojson}};
+ 
+        const data = {
+            labels: labels,
+            datasets: [{
+                label: 'PMOD Color Sensor Data',
+                backgroundColor: 'rgb(232, 104, 98)',
+                borderColor: 'rgb(255, 0, 255)',
+                data: {{ data | tojson}},
+            }]
+        };
+ 
+        const config = {
+            type: 'bar',
+            data: data,
+            options: { maintainAspectRatio: false }
+        };
+ 
+        const ColorChart = new Chart(
+            document.getElementById('ColorChart'),
+            config
+        );
+    
+    </script>
+        <h1>PMOD Color Sensor Data</h1>
+		<h2> Sensor Status  </h2>
+		<h3> PMOD_Color_Sensor_Device_ID ==>  {{ ID  }}      </h3>
+		<h4> PMOD_Sensor_Color_R ==>  {{ color_r  }} ;<span class="tab"></span>  PMOD_Sensor_Color_G ==>  {{ color_g  }} ;<span class="tab"></span> PMOD_Sensor_Color_B ==>  {{ color_b  }} </h4>		 
+ 	 	<h5> PMOD_Sensor_Color_Lux ==>  {{ color_lux  }} ;<span class="tab"></span> <span class="tab"></span> PMOD_Sensor_color_temp ==>  {{ color_temp  }}</h5>		 
+		<br>
+     <form>
+        <input type="submit" value="Get New Color">
+</body>
+</html>
