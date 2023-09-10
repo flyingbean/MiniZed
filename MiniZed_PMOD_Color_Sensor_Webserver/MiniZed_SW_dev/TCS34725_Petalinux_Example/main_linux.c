@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2015 IBM Corp.
+ * Copyright (c) 2015 IBM Corp. For Init version
  *
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
@@ -42,9 +42,14 @@
  * 
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- * 
+ *
+ *********************************
+ * Updated version for MiniZed on Path to Programmable III design challenge
+ *  Created on: Aug 26, 2023
+ *  Author: Flyingbean
+ *  Migrated from HTU21 driver example. The targeted part is TCS3475 on Zynq FPGA
  *******************************************************************************/
-
+ 
 #include <stdio.h>
 #include <string.h>
 #include <signal.h>
