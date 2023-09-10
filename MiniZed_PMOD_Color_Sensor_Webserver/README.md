@@ -1,4 +1,4 @@
-# MiniZed Project for Element14 Communit Design Challenge: Path to Programmable Path III
+# MiniZed Project for Element14 Communit Design Challenge: Path to Programmable III
 Phase01: The initial repo for Element14 Community Design Challenge: Path to Programmable III. 
          The final project name is MiniZed Color Sensor Webserver.
          
