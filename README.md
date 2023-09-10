@@ -1,2 +1,2 @@
 # MiniZed
-Phase01: The initial repo for Element14 Community Design Challenge: Path to Programmable III. 2023
+This repo keeps the projects on MiniZed, which including Color Sensor Webserver for Element14 Community design challenge: Path to Programmable III.
