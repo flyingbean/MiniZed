@@ -1,8 +1,10 @@
 /*
  * tcs34725.c
  *
- *  Created on: Aug 12, 2014
- *      Author: JMBrinkhus
+ *  Created on: Aug 26, 2023
+ *  Author: Flyingbean
+ *  Migrated from HTU21 driver developed by JMBrinkhus. The targeted part is TCS3475 on Zynq FPGA
+ *  
  */
 
 //#include "xiic_l.h"
